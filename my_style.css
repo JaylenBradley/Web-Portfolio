@@ -1,0 +1,195 @@
+h1 {
+    color: whitesmoke;
+    font-size: 2.8em; /*Default is 1.8*/
+    font-weight: bold; 
+    text-align: center;
+}
+
+h2 a {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /*removes underline*/
+}
+
+h2 a:hover, h2 a:focus{
+    color: whitesmoke;
+    text-decoration: underline; /*adds underline*/
+}
+
+
+
+h1 a:hover, h1 a:focus{
+    color: black;
+    text-decoration: underline; /*adds underline*/
+}
+
+header h1 {
+    text-align: start;
+    padding-left: 0.75em;
+    color: black;
+}
+
+header h1 a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none; /*removes underline*/
+}
+
+header h2 {
+    text-align: start;
+    padding-left: 1.2em;
+    color: cornflowerblue;
+    font-size: 2em;
+}
+
+header h3 {
+    text-align: start;
+    padding-left: 1.6em;
+    color: black;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+div p{
+    padding-bottom: 5;
+    margin-bottom: 5;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-decoration: none; /*removes underline*/
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+table {
+    width: 35%;
+    border-collapse: collapse;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+    background-color: lightgray;
+}
+
+/* Center align text in table cells */
+td, th {
+    text-align: center;
+}
+
+/* Add a blue background to the header row */
+th {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body {
+    font-size: 1em;
+    font-weight: normal;
+    font-family: Times, Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0 auto;
+    background-color: rgb(230, 230, 230);
+}
+
+nav{
+    /* clear property will move the nav element on its own line and left justify */
+    clear:left;
+    padding:2em;
+}
+
+nav ul li {
+    /* float is used for positioning */
+    float: left;
+    margin-right: 0.5em;
+}
+
+nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color:cornflowerblue; 
+    color: whitesmoke; 
+    border: 2px solid black;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; /* another rounded corner! */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: cornflowerblue;
+    background-color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.square {
+    background-color: cornflowerblue;
+    border-radius: 5;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto; /* centers the square horizontally */
+    display:block;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    width: 50%;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; 
+    border-bottom-left-radius: 1em 1em; 
+    border-bottom-right-radius: 1em 1em; 
+}
+
+.paragraph-square {
+    background-color: white;
+    border-radius: 5;
+    text-align: start;
+    padding: 20px;
+    margin: 20px auto;
+    display:block;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    line-height: 1.5;
+    width: 95%;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; 
+    border-bottom-left-radius: 1em 1em; 
+    border-bottom-right-radius: 1em 1em; 
+}
+
+.right-square {
+    float: right;
+    width: 200px; /* adjust the width as needed */
+}
+
+/* Add alternating row colors
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+*/
+
+/* Add a red border to the first column 
+th:first-child {
+    border-left: 2px solid red;
+}
+*/
+
+/* Add a green border to the last column 
+th:last-child {
+    border-right: 2px solid green;
+}
+*/
